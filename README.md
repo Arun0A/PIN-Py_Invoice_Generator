@@ -6,7 +6,7 @@
 | v0.2             | Not-Yet-Released |  |
 | v0.1             | Released |  |
 
-## Why OsmiOS?
+## Why PIN?
 A few days back I observed in India, here, small scale shop owners were mislead and fooled by people which encured them a huge loss, this project was developed in regard to stop this deception. Also I kept in mind to make it as much simple yet functional and budget friendly access to them.
 - PDF Invoice Generator
 - Faster Processing
