@@ -94,7 +94,7 @@ for i in range(1,no_items-11):
         row30 = copyRange('A', '29', 'F', '29', sh)
         pasteRange('A', str(i+29), 'F', str(i+29), sh, row29)
 
-for i in range(19,no_items+18):
+for i in range(19,no_items+19):
     for j in temp.items:
         prop = j.split(' ')
         sh['B'+str(i)] = prop[0]
@@ -103,5 +103,6 @@ for i in range(19,no_items+18):
 
 os.chdir(fr'{os.getcwd()}\inprocess')
 wb.save(f'{temp.invoicenum}_{temp.btName}.xlsx')
+wb.close()
 os.chdir(os.path.dirname(os.getcwd()))
 os.system('python -u "xlsxtopdf.py"')
