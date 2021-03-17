@@ -29,7 +29,7 @@ Discount = '{discount.get()}'
 TaxRate = '{taxrate.get()}'
 Shipping = '{shipping.get()}'
 Info = '{info.get()}'
-destPdf = '{destpdf.get()}'\n""")
+destPdf = r'{destpdf.get()}'\n""")
         alert('Uploaded')
     else:
         alert('Upload Error: All Values Not Provided; provide space if null')
@@ -58,7 +58,7 @@ Discount = '{discount.get()}'
 TaxRate = '{taxrate.get()}'
 Shipping = '{shipping.get()}'
 Info = '{info.get()}'
-destPdf = '{destpdf.get()}'\n""")
+destPdf = r'{destpdf.get()}'\n""")
     alert('Save Status Updated')
 
 def impsave():
@@ -97,9 +97,9 @@ def warn():
 
 def openList():
     system('python -u "getItems.py"')
-    choice = confirm("Process Started", buttons=[])
 
 def build():
+    choice = confirm("Proceed?", buttons=["Ok"])
     system('python -u "sub.py"')
 
 master = tk.Tk()
