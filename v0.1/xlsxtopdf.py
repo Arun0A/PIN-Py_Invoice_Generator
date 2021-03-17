@@ -16,6 +16,7 @@ def Excel_to_pdf():
       ws.ExportAsFixedFormat(0,out_file )
       #print("XLSX to PDF conversion sucessful and Saved")
       if(app.questionBox("File Save", "Output PDF saved. Do you want to quit?")):
+           books.close()
            app.stop()
 
 
